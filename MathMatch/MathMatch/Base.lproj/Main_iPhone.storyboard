@@ -945,11 +945,11 @@
         <scene sceneID="uyV-Pf-uHV">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="C6b-E3-CYH" customClass="MMXClassesViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="1O3-1a-r6e">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="1O3-1a-r6e">
                         <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="separatorColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96133207070707072" green="0.96133207070707072" blue="0.96133207070707072" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" red="0.84052217953535346" green="0.84052217953535346" blue="0.84052217953535346" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
@@ -960,22 +960,29 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKp-qS-LjF">
-                                            <rect key="frame" x="14" y="15" width="208" height="58"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKp-qS-LjF">
+                                            <rect key="frame" x="14" y="26" width="212" height="28"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                             <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 of 00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paK-td-vxp">
-                                            <rect key="frame" x="242" y="31" width="64" height="26"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="0 of 00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paK-td-vxp">
+                                            <rect key="frame" x="246" y="28" width="60" height="25"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                             <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="YKp-qS-LjF" secondAttribute="centerY" id="NMH-dw-bY8"/>
+                                        <constraint firstItem="paK-td-vxp" firstAttribute="leading" secondItem="YKp-qS-LjF" secondAttribute="trailing" constant="20" id="Rw5-mv-XVq"/>
+                                        <constraint firstAttribute="centerY" secondItem="paK-td-vxp" secondAttribute="centerY" id="Z8u-YT-SG3"/>
+                                        <constraint firstAttribute="trailing" secondItem="paK-td-vxp" secondAttribute="trailing" constant="108" id="jFy-jQ-Cfc"/>
+                                        <constraint firstItem="YKp-qS-LjF" firstAttribute="leading" secondItem="6dH-Jc-SVU" secondAttribute="leading" constant="14" id="ojf-KL-qdT"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="classTitleLabel" destination="YKp-qS-LjF" id="WFG-0U-kcx"/>
                                     <outlet property="progressDescriptionLabel" destination="paK-td-vxp" id="qBg-4E-otA"/>
@@ -989,25 +996,39 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MMXRatingStar" translatesAutoresizingMaskIntoConstraints="NO" id="wCo-aY-xgD">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MMXRatingStar" translatesAutoresizingMaskIntoConstraints="NO" id="wCo-aY-xgD">
                                             <rect key="frame" x="278" y="27" width="28" height="26"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="26" id="Y9a-3j-7Jw"/>
+                                                <constraint firstAttribute="width" constant="28" id="bXu-Li-3Yf"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGJ-FB-8Fs">
-                                            <rect key="frame" x="244" y="25" width="30" height="34"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGJ-FB-8Fs">
+                                            <rect key="frame" x="259" y="24" width="15" height="33"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
                                             <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Class Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-Ic-0Df">
-                                            <rect key="frame" x="14" y="15" width="208" height="58"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-Ic-0Df">
+                                            <rect key="frame" x="14" y="26" width="223" height="28"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                             <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="MGJ-FB-8Fs" firstAttribute="leading" secondItem="Enk-Ic-0Df" secondAttribute="trailing" constant="22" id="1d4-ed-3Aa"/>
+                                        <constraint firstItem="Enk-Ic-0Df" firstAttribute="leading" secondItem="wne-Lz-iKk" secondAttribute="leading" constant="14" id="DlV-77-IlZ"/>
+                                        <constraint firstItem="MGJ-FB-8Fs" firstAttribute="leading" secondItem="Enk-Ic-0Df" secondAttribute="trailing" constant="22" id="Rat-Ei-ln1"/>
+                                        <constraint firstAttribute="centerY" secondItem="MGJ-FB-8Fs" secondAttribute="centerY" id="Tmd-fX-TYf"/>
+                                        <constraint firstAttribute="trailing" secondItem="wCo-aY-xgD" secondAttribute="trailing" constant="108" id="Xwq-k6-Ck8"/>
+                                        <constraint firstAttribute="centerY" secondItem="Enk-Ic-0Df" secondAttribute="centerY" id="aIQ-nd-WO2"/>
+                                        <constraint firstItem="wCo-aY-xgD" firstAttribute="leading" secondItem="MGJ-FB-8Fs" secondAttribute="trailing" constant="4" id="fFT-BB-4gd"/>
+                                        <constraint firstAttribute="centerY" secondItem="wCo-aY-xgD" secondAttribute="centerY" id="nQz-Zr-bNM"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="classTitleLabel" destination="Enk-Ic-0Df" id="VDU-t1-I3Y"/>
                                     <outlet property="starCountLabel" destination="MGJ-FB-8Fs" id="uag-LH-0vB"/>
