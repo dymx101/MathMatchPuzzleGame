@@ -37,7 +37,7 @@ NSString * const kMMXUserDefaultsPracticeMusic = @"MMXUserDefaultsPracticeMusic"
 {
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBar.barTintColor = [UIColor mmx_orangeColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor mandarinColor];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

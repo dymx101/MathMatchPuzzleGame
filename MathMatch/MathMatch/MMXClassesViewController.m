@@ -62,7 +62,7 @@
 {
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBar.barTintColor = [UIColor mmx_blueColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor skyBlueColor];
     
     // Doesn't deselect on swipe back (bug?) so doing it manually.
     [self.tableView deselectRowAtIndexPath:self.tableView.indexPathForSelectedRow animated:YES];

@@ -106,7 +106,7 @@
     
     if (self.gameData.gameType == MMXGameTypeHowToPlay)
     {
-        self.navigationController.navigationBar.barTintColor = [UIColor mmx_greenColor];
+        self.navigationController.navigationBar.barTintColor = [UIColor emeraldColor];
     }
 }
 

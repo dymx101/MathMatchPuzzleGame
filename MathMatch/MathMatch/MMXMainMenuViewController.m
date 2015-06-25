@@ -136,11 +136,6 @@
     }
     else if ([segue.identifier isEqualToString:@"MMXSettingsSegue"])
     {
-        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-        {
-            UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
-            popoverController.backgroundColor = [UIColor mmx_purpleColor];
-        }
         
         MMXNavigationController *modalNavigationController = (MMXNavigationController *)segue.destinationViewController;
         modalNavigationController.managedObjectContext = navigationController.managedObjectContext;

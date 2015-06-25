@@ -20,6 +20,7 @@
 #import <Masonry/Masonry.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 #import <AFNetworking/AFNetworking.h>
+#import <Colours/Colours.h>
 
     #import "MMXAudioManager.h"
     #import "MMXGameData.h"
