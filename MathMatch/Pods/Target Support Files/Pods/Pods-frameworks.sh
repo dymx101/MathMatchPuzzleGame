@@ -51,11 +51,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'AFNetworking.framework'
   install_framework 'Colours.framework'
   install_framework 'CustomBadge.framework'
+  install_framework 'MagicalRecord.framework'
   install_framework 'Masonry.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'AFNetworking.framework'
   install_framework 'Colours.framework'
   install_framework 'CustomBadge.framework'
+  install_framework 'MagicalRecord.framework'
   install_framework 'Masonry.framework'
 fi

@@ -22,6 +22,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import <Colours/Colours.h>
 #import <CustomBadge/CustomBadge.h>
+#import <MagicalRecord/MagicalRecord.h>
 
     #import "MMXAudioManager.h"
     #import "MMXGameData.h"
