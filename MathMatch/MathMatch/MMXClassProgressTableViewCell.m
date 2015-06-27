@@ -20,7 +20,7 @@
 
 -(void)awakeFromNib {
     _bottomLine = [UIView new];
-    _bottomLine.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
+    _bottomLine.backgroundColor = [UIColor colorWithWhite:0.85 alpha:1];
     [self.contentView addSubview:_bottomLine];
     [_bottomLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.equalTo(self.contentView.mas_leading).offset(20);
@@ -41,6 +41,7 @@
 -(void)setBadgeText:(NSString *)text bgColor:(UIColor *)bgColor {
     
     _badge.badgeStyle.badgeInsetColor = bgColor;
+    
     if (text.length > 0) {
         _badge.hidden = NO;
         [_badge autoBadgeSizeWithString:text];

@@ -8,10 +8,10 @@
 
 #import "MMXClassesViewController.h"
 #import "MMXClassProgressTableViewCell.h"
-#import "MMXClassStarTableViewCell.h"
 #import "MMXLessonsViewController.h"
 #import "MMXResultsViewController.h"
 #import "MMXTopScore.h"
+#import "MMXLessonTableViewCell.h"
 
 @interface MMXClassesViewController ()
 
@@ -125,8 +125,8 @@
         NSNumber *shouldShowStars = accessoryLabels[@"shouldShowStars"];
         if (shouldShowStars.boolValue)
         {
-            MMXClassStarTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MMXClassStarCell" forIndexPath:indexPath];
-            cell.classTitleLabel.text = class[@"title"];
+            MMXLessonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MMXClassStarCell" forIndexPath:indexPath];
+            cell.lessonTitleLabel.text = class[@"title"];
             cell.starCountLabel.text = accessoryLabels[@"label"];
             
             
@@ -135,7 +135,7 @@
             {
                 pluralStars = @"Star";
             }
-            cell.accessibilityLabel = [NSString stringWithFormat:@"%@, %@ %@", cell.classTitleLabel.text, cell.starCountLabel.text, pluralStars];
+            cell.accessibilityLabel = [NSString stringWithFormat:@"%@, %@ %@", cell.lessonTitleLabel.text, cell.starCountLabel.text, pluralStars];
             
             return cell;
         }

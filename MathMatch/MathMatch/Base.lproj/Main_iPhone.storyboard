@@ -1005,7 +1005,7 @@
                                     <segue destination="fm7-LP-WHa" kind="show" identifier="MMXProgressCellToLessonsSegue" id="bm2-5u-3zP"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MMXClassStarCell" rowHeight="80" id="ken-bb-xJ1" customClass="MMXClassStarTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MMXClassStarCell" rowHeight="80" id="ken-bb-xJ1" customClass="MMXLessonTableViewCell">
                                 <rect key="frame" x="0.0" y="102" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ken-bb-xJ1" id="wne-Lz-iKk">
@@ -1045,7 +1045,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="classTitleLabel" destination="Enk-Ic-0Df" id="VDU-t1-I3Y"/>
-                                    <outlet property="starCountLabel" destination="MGJ-FB-8Fs" id="uag-LH-0vB"/>
+                                    <outlet property="lessonTitleLabel" destination="Enk-Ic-0Df" id="m9N-qZ-6nW"/>
+                                    <outlet property="starCountLabel" destination="MGJ-FB-8Fs" id="5mg-Zb-dDC"/>
+                                    <outlet property="starImageView" destination="wCo-aY-xgD" id="vRM-h0-wzT"/>
                                     <segue destination="fm7-LP-WHa" kind="show" identifier="MMXStarCellToLessonsSegue" id="dVO-eu-3qc"/>
                                 </connections>
                             </tableViewCell>
