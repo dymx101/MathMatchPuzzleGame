@@ -387,7 +387,7 @@
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Math Match" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMA-FL-pTS">
                                         <rect key="frame" x="0.0" y="140" width="280" height="46"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="33"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version X.Y.Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hld-TQ-2M3">
@@ -978,7 +978,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKp-qS-LjF">
-                                            <rect key="frame" x="14" y="26" width="270" height="28"/>
+                                            <rect key="frame" x="14" y="26" width="93" height="28"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                             <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -993,7 +993,6 @@
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="centerY" secondItem="YKp-qS-LjF" secondAttribute="centerY" id="NMH-dw-bY8"/>
-                                        <constraint firstItem="paK-td-vxp" firstAttribute="leading" secondItem="YKp-qS-LjF" secondAttribute="trailing" constant="20" id="Rw5-mv-XVq"/>
                                         <constraint firstAttribute="centerY" secondItem="paK-td-vxp" secondAttribute="centerY" id="Z8u-YT-SG3"/>
                                         <constraint firstAttribute="trailing" secondItem="paK-td-vxp" secondAttribute="trailing" constant="50" id="jFy-jQ-Cfc"/>
                                         <constraint firstItem="YKp-qS-LjF" firstAttribute="leading" secondItem="6dH-Jc-SVU" secondAttribute="leading" constant="14" id="ojf-KL-qdT"/>
@@ -1027,7 +1026,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-Ic-0Df">
-                                            <rect key="frame" x="14" y="26" width="281" height="28"/>
+                                            <rect key="frame" x="14" y="26" width="93" height="28"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                             <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -1035,9 +1034,7 @@
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="MGJ-FB-8Fs" firstAttribute="leading" secondItem="Enk-Ic-0Df" secondAttribute="trailing" constant="22" id="1d4-ed-3Aa"/>
                                         <constraint firstItem="Enk-Ic-0Df" firstAttribute="leading" secondItem="wne-Lz-iKk" secondAttribute="leading" constant="14" id="DlV-77-IlZ"/>
-                                        <constraint firstItem="MGJ-FB-8Fs" firstAttribute="leading" secondItem="Enk-Ic-0Df" secondAttribute="trailing" constant="22" id="Rat-Ei-ln1"/>
                                         <constraint firstAttribute="centerY" secondItem="MGJ-FB-8Fs" secondAttribute="centerY" id="Tmd-fX-TYf"/>
                                         <constraint firstAttribute="trailing" secondItem="wCo-aY-xgD" secondAttribute="trailing" constant="50" id="Xwq-k6-Ck8"/>
                                         <constraint firstAttribute="centerY" secondItem="Enk-Ic-0Df" secondAttribute="centerY" id="aIQ-nd-WO2"/>
@@ -1082,7 +1079,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lesson Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY2-xh-0Ws">
-                                            <rect key="frame" x="14" y="26" width="292" height="28"/>
+                                            <rect key="frame" x="14" y="26" width="108" height="28"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                             <color key="textColor" red="0.16862745100000001" green="0.16862745100000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -1108,7 +1105,6 @@
                                         <constraint firstAttribute="centerY" secondItem="RY2-xh-0Ws" secondAttribute="centerY" id="nvV-f6-Rrc"/>
                                         <constraint firstAttribute="centerY" secondItem="L53-hY-9CA" secondAttribute="centerY" id="u4d-gy-3EW"/>
                                         <constraint firstItem="aS8-G1-YDy" firstAttribute="leading" secondItem="L53-hY-9CA" secondAttribute="trailing" constant="5" id="xlE-KI-r4a"/>
-                                        <constraint firstItem="L53-hY-9CA" firstAttribute="leading" secondItem="RY2-xh-0Ws" secondAttribute="trailing" constant="10" id="yYa-d7-jX8"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

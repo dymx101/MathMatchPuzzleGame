@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-CustomBadge.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5FD66A0D02905164383B067D</key>
+		<key>2A4B28C8F12793374E663290</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E0E32969AE6F3013FB5D793</key>
+		<key>66A0731521C607E1CC2EDA5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB6B1F81F580C7E94843A139</key>
+		<key>C43806467423E95297833D9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E312A26BAF507D4A0FE28B7B</key>
+		<key>F4A9CDDBD3EAFA840AE7E789</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F56FB319CECB09E28157CC23</key>
 		<dict>
 			<key>primary</key>
 			<true/>

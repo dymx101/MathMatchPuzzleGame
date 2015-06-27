@@ -129,6 +129,7 @@
             cell.classTitleLabel.text = class[@"title"];
             cell.starCountLabel.text = accessoryLabels[@"label"];
             
+            
             NSString *pluralStars = @"Stars";
             if ([cell.starCountLabel.text isEqualToString:@"1"])
             {
@@ -143,6 +144,7 @@
             MMXClassProgressTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MMXClassProgressCell" forIndexPath:indexPath];
             cell.classTitleLabel.text = class[@"title"];
             cell.progressDescriptionLabel.text = accessoryLabels[@"label"];
+            [cell setBadgeText:@"haha" bgColor:[UIColor blueColor]];
             
             cell.accessibilityLabel = nil;
             

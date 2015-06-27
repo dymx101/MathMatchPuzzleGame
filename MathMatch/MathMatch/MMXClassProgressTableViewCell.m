@@ -9,8 +9,10 @@
 #import "MMXClassProgressTableViewCell.h"
 
 @interface MMXClassProgressTableViewCell () {
-    UIView      *_bottomLine;
+    UIView          *_bottomLine;
 }
+
+@property (nonatomic, strong) CustomBadge     *badge;
 
 @end
 
@@ -26,6 +28,25 @@
         make.bottom.equalTo(self.contentView.mas_bottom).offset(-0.5);
         make.height.equalTo(@0.5);
     }];
+    
+    _badge = [CustomBadge customBadgeWithString:@" "];
+    _badge.badgeStyle.badgeFontType = BadgeStyleFontTypeHelveticaNeueMedium;
+    [self.contentView addSubview:_badge];
+    [_badge mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.equalTo(_classTitleLabel.mas_trailing).offset(5);
+        make.centerY.equalTo(self.contentView.mas_centerY);
+    }];
+}
+
+-(void)setBadgeText:(NSString *)text bgColor:(UIColor *)bgColor {
+    
+    _badge.badgeStyle.badgeInsetColor = bgColor;
+    if (text.length > 0) {
+        _badge.hidden = NO;
+        [_badge autoBadgeSizeWithString:text];
+    } else {
+        _badge.hidden = YES;
+    }
 }
 
 @end

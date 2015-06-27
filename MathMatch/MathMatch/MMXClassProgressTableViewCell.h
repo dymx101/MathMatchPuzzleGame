@@ -13,4 +13,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *classTitleLabel;
 @property (nonatomic, weak) IBOutlet UILabel *progressDescriptionLabel;
 
+-(void)setBadgeText:(NSString *)text bgColor:(UIColor *)bgColor;
+
 @end

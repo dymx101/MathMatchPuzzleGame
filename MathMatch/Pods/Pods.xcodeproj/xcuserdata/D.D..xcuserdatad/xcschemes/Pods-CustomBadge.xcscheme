@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C43806467423E95297833D9E"
-               BuildableName = "Colours.framework"
-               BlueprintName = "Pods-Colours"
+               BlueprintIdentifier = "2A4B28C8F12793374E663290"
+               BuildableName = "CustomBadge.framework"
+               BlueprintName = "Pods-CustomBadge"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

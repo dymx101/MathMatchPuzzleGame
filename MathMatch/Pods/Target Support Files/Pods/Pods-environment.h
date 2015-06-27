@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_Colours 6
 #define COCOAPODS_VERSION_PATCH_Colours 2
 
+// CustomBadge
+#define COCOAPODS_POD_AVAILABLE_CustomBadge
+#define COCOAPODS_VERSION_MAJOR_CustomBadge 3
+#define COCOAPODS_VERSION_MINOR_CustomBadge 0
+#define COCOAPODS_VERSION_PATCH_CustomBadge 0
+
 // Google-Mobile-Ads-SDK
 #define COCOAPODS_POD_AVAILABLE_Google_Mobile_Ads_SDK
 #define COCOAPODS_VERSION_MAJOR_Google_Mobile_Ads_SDK 7

@@ -21,18 +21,21 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Colours (5.6.2)
+  - CustomBadge (3.0.0)
   - Google-Mobile-Ads-SDK (7.3.1)
   - Masonry (0.6.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
   - Colours (~> 5.6.2)
+  - CustomBadge (~> 3.0.0)
   - Google-Mobile-Ads-SDK (~> 7.3.1)
   - Masonry (~> 0.6.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Colours: 0afd4c3429656880fd4cff350ca3bf0ab86ca348
+  CustomBadge: c60738d213e7ef019b0bf1caa7948333f280ea9b
   Google-Mobile-Ads-SDK: 3647bfddc7384c514ab96a8bed86d98b31e623e4
   Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
 
