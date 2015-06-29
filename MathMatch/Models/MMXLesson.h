@@ -9,6 +9,24 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+typedef NS_ENUM(NSInteger, EMMXArithmeticType) {
+    kMMXArithmeticAddition = 0
+    , kMMXArithmeticSubtraction
+    , kMMXArithmeticMultiplication
+    , kMMXArithmeticDivision
+};
+
+typedef NS_ENUM(NSInteger, EMMXStartingPositionType) {
+    kMMXStartingPositionFaceUp = 0
+    , kMMXStartingPositionFaceDown
+};
+
+typedef NS_ENUM(NSInteger, EMMXDifficulty) {
+    kMMXDifficultyEasy = 0
+    , kMMXDifficultyMedium
+    , kMMXDifficultyHard
+};
+
 @class MMXClass;
 
 @interface MMXLesson : NSManagedObject

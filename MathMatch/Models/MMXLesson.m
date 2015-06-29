@@ -23,4 +23,8 @@
 @dynamic title;
 @dynamic fromClass;
 
+-(NSString *)description {
+    return [NSString stringWithFormat:@"[MMXLesson] - lessonID:%@, arithmeticType:%@, musicTrackType:%@, numberOfCards:%@, penaltyMultiplier:%@, starTimes:%@, startingPositionType:%@, targetNumber:%@, title:%@", self.lessonID, self.arithmeticType, self.musicTrackType, self.numberOfCards, self.penaltyMultiplier, self.starTimes, self.startingPositionType, self.targetNumber, self.title];
+}
+
 @end

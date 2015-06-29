@@ -14,10 +14,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"MathMatch"];
+    
     self.navController = (MMXNavigationController *)self.window.rootViewController;
     self.navController.managedObjectContext = [NSManagedObjectContext MR_defaultContext];
     
-    [MagicalRecord setupCoreDataStackWithStoreNamed:@"MathMatch"];
+    
     
     [MMXDataManager initDataBase];
     
