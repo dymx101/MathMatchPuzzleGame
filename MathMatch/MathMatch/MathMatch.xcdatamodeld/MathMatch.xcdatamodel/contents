@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="MMXClass" syncable="YES">
-        <attribute name="lessons" optional="YES" attributeType="Transformable" syncable="YES"/>
+    <entity name="MMXClass" representedClassName="MMXClass" syncable="YES">
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lessons" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MMXLesson" inverseName="fromClass" inverseEntity="MMXLesson" syncable="YES"/>
     </entity>
     <entity name="MMXGameData" representedClassName="MMXGameData" syncable="YES">
         <attribute name="arithmeticType" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -24,7 +24,7 @@
         <attribute name="twoStarTime" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <relationship name="topScore" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MMXTopScore" inverseName="gameData" inverseEntity="MMXTopScore" syncable="YES"/>
     </entity>
-    <entity name="MMXLesson" syncable="YES">
+    <entity name="MMXLesson" representedClassName="MMXLesson" syncable="YES">
         <attribute name="arithmeticType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="lessonID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="musicTrackType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -34,6 +34,7 @@
         <attribute name="startingPositionType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="targetNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fromClass" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MMXClass" inverseName="lessons" inverseEntity="MMXClass" syncable="YES"/>
     </entity>
     <entity name="MMXTopScore" representedClassName="MMXTopScore" syncable="YES">
         <attribute name="lessonID" attributeType="Integer 16" minValueString="101" maxValueString="999" syncable="YES"/>
@@ -42,9 +43,9 @@
         <relationship name="gameData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MMXGameData" inverseName="topScore" inverseEntity="MMXGameData" syncable="YES"/>
     </entity>
     <elements>
-        <element name="MMXGameData" positionX="241" positionY="5" width="191" height="313"/>
-        <element name="MMXTopScore" positionX="0" positionY="0" width="128" height="103"/>
         <element name="MMXClass" positionX="153" positionY="144" width="128" height="75"/>
-        <element name="MMXLesson" positionX="162" positionY="153" width="128" height="180"/>
+        <element name="MMXGameData" positionX="241" positionY="5" width="191" height="313"/>
+        <element name="MMXLesson" positionX="162" positionY="153" width="128" height="195"/>
+        <element name="MMXTopScore" positionX="0" positionY="0" width="128" height="103"/>
     </elements>
 </model>

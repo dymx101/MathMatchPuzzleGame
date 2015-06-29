@@ -58,6 +58,9 @@
 		27F3C27D1928FB2B00EB5D59 /* MMXClassProgressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3C27C1928FB2B00EB5D59 /* MMXClassProgressTableViewCell.m */; };
 		27F3C28C192A76B300EB5D59 /* MMXLessonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3C28B192A76B300EB5D59 /* MMXLessonTableViewCell.m */; };
 		27F3C290192A774E00EB5D59 /* MMXLessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3C28F192A774E00EB5D59 /* MMXLessonsViewController.m */; };
+		63EDC9D51B410A9400C56F18 /* MMXLesson.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EDC9D21B410A9400C56F18 /* MMXLesson.m */; };
+		63EDC9D61B410A9400C56F18 /* MMXClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EDC9D41B410A9400C56F18 /* MMXClass.m */; };
+		63EDC9D91B410B2400C56F18 /* MMXDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EDC9D81B410B2400C56F18 /* MMXDataManager.m */; };
 		EA51613B1B382B2A0031C47F /* NSObject+BeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = EA51613A1B382B2A0031C47F /* NSObject+BeeNotification.m */; };
 		EA51613E1B382B460031C47F /* FDAdmobManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA51613D1B382B460031C47F /* FDAdmobManager.m */; };
 		EA55F7AA1B384BBF00E78FE0 /* UIViewController+PSContainment.m in Sources */ = {isa = PBXBuildFile; fileRef = EA55F7A91B384BBF00E78FE0 /* UIViewController+PSContainment.m */; };
@@ -153,6 +156,12 @@
 		27F3C28E192A774E00EB5D59 /* MMXLessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMXLessonsViewController.h; sourceTree = "<group>"; };
 		27F3C28F192A774E00EB5D59 /* MMXLessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMXLessonsViewController.m; sourceTree = "<group>"; };
 		605D5373424D837257C826DC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EDC9D11B410A9400C56F18 /* MMXLesson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMXLesson.h; sourceTree = "<group>"; };
+		63EDC9D21B410A9400C56F18 /* MMXLesson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMXLesson.m; sourceTree = "<group>"; };
+		63EDC9D31B410A9400C56F18 /* MMXClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMXClass.h; sourceTree = "<group>"; };
+		63EDC9D41B410A9400C56F18 /* MMXClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMXClass.m; sourceTree = "<group>"; };
+		63EDC9D71B410B2400C56F18 /* MMXDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMXDataManager.h; sourceTree = "<group>"; };
+		63EDC9D81B410B2400C56F18 /* MMXDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMXDataManager.m; sourceTree = "<group>"; };
 		64584EA35451DDAD5EA5B3DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA5161391B382B2A0031C47F /* NSObject+BeeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BeeNotification.h"; sourceTree = "<group>"; };
 		EA51613A1B382B2A0031C47F /* NSObject+BeeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeNotification.m"; sourceTree = "<group>"; };
@@ -253,6 +262,7 @@
 		279EC1FE18884A890087E0DB = {
 			isa = PBXGroup;
 			children = (
+				63EDC9D01B410A0400C56F18 /* Models */,
 				EA5161381B382B220031C47F /* Categories */,
 				F82BDC6E1A6384B5007441D0 /* Billing */,
 				F8B4B3A21A62AEE400B61DF6 /* AdsFramework */,
@@ -421,6 +431,19 @@
 				605D5373424D837257C826DC /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63EDC9D01B410A0400C56F18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63EDC9D11B410A9400C56F18 /* MMXLesson.h */,
+				63EDC9D21B410A9400C56F18 /* MMXLesson.m */,
+				63EDC9D31B410A9400C56F18 /* MMXClass.h */,
+				63EDC9D41B410A9400C56F18 /* MMXClass.m */,
+				63EDC9D71B410B2400C56F18 /* MMXDataManager.h */,
+				63EDC9D81B410B2400C56F18 /* MMXDataManager.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EA5161381B382B220031C47F /* Categories */ = {
@@ -633,6 +656,8 @@
 				27F3C28C192A76B300EB5D59 /* MMXLessonTableViewCell.m in Sources */,
 				2757A21E195C858500294D5C /* MMXClassTableViewCell.m in Sources */,
 				27F3C290192A774E00EB5D59 /* MMXLessonsViewController.m in Sources */,
+				63EDC9D91B410B2400C56F18 /* MMXDataManager.m in Sources */,
+				63EDC9D61B410A9400C56F18 /* MMXClass.m in Sources */,
 				275500AA18AB0DC2008B4DB4 /* MMXCardViewController.m in Sources */,
 				277A1F20192268BC00E09050 /* MMXAudioManager.m in Sources */,
 				F82BDC821A6384B5007441D0 /* IAPProduct.m in Sources */,
@@ -647,6 +672,7 @@
 				27B199A6190ADCBA00C38E8F /* UIColor+MMXColor.m in Sources */,
 				271DA31C1901953B00E81154 /* MMXResultsViewController.m in Sources */,
 				27A086801893867C00C318DE /* MMXGameViewController.m in Sources */,
+				63EDC9D51B410A9400C56F18 /* MMXLesson.m in Sources */,
 				EA51613E1B382B460031C47F /* FDAdmobManager.m in Sources */,
 				279EC22618884A890087E0DB /* MathMatch.xcdatamodeld in Sources */,
 				27A086761891CB9000C318DE /* MMXGameData.m in Sources */,
